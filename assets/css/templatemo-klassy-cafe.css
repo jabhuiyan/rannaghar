@@ -1200,6 +1200,26 @@ responsive
     margin-left: 0px;
     margin-top: 30px;
   }
+  
+  #offers .heading-tabs {
+    display: flex;
+    flex-wrap: wrap; /* Allows tabs to wrap within the row */
+    justify-content: center;
+    gap: 10px; /* Adds spacing between tabs */
+  }
+
+  #offers #tabs ul li {
+    display: inline-block;
+    margin: 5px; /* Adjusts spacing for smaller screens */
+    flex: 1 1 auto; /* Makes tabs responsive */
+  }
+
+  #offers #tabs ul li a {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 10px 5px; /* Adds padding for better spacing */
+    text-align: center;
+  }
+  
   #offers .tabs-content .left-list {
     margin-right: 0px;
   }
@@ -1252,6 +1272,26 @@ responsive
     margin-left: 0px;
     margin-top: 30px;
   }
+  
+  #offers .heading-tabs {
+    display: flex;
+    flex-wrap: wrap; /* Allows tabs to wrap within the row */
+    justify-content: center;
+    gap: 10px; /* Adds spacing between tabs */
+  }
+
+  #offers #tabs ul li {
+    display: inline-block;
+    margin: 5px; /* Adjusts spacing for smaller screens */
+    flex: 1 1 auto; /* Makes tabs responsive */
+  }
+
+  #offers #tabs ul li a {
+    font-size: 14px; /* Smaller font size for mobile */
+    padding: 10px 5px; /* Adds padding for better spacing */
+    text-align: center;
+  }
+  
   #offers .tabs-content .left-list {
     margin-right: 0px;
   }
