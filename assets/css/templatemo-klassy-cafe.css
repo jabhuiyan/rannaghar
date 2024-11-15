@@ -1095,6 +1095,51 @@ offers
   color: #fff;
 }
 
+/*
+---------------------------------------------
+delivery
+---------------------------------------------
+*/
+
+.delivery {
+  padding: 60px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.delivery h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.delivery-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.delivery-button {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #fb5849;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.delivery-button:hover {
+  background-color: #d94336;
+}
+
+.delivery-button:nth-child(1) { background-color: #ff7f00; } /* SkipTheDishes color */
+.delivery-button:nth-child(2) { background-color: #e63946; } /* DoorDash color */
+.delivery-button:nth-child(3) { background-color: #12992fb4; } /* UberEats color */
+
 
 /* 
 ---------------------------------------------
@@ -1166,109 +1211,6 @@ footer .right-text-content ul li a:hover {
 responsive
 --------------------------------------------- 
 */
-@media (max-width: 768px) {
-  #top {
-    padding-top: 100px;
-    height: auto;
-  }
-  .header-area .main-nav .nav li.submenu:after {
-    right: 3px;
-  }
-  .header-area .main-nav .nav li.submenu {
-    padding-right: 15px;
-  }
-  .header-area .main-nav .nav li {
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-  .header-area .main-nav .nav li a {
-    font-size: 14px;
-    letter-spacing: 0px;
-  }
-
-  #top .left-content {
-    padding: 25% 0px;
-    text-align: center;
-  }
-
-  #top .left-content .inner-content {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none; /* Resets transform on mobile */
-    margin: 0 auto;
-    max-width: 90%; /* Ensures content stays within banner */
-  }
-
-  #top .left-content h4 {
-    font-size: 32px; /* Smaller font size for mobile */
-    line-height: 1.2; /* Reduces line height for tighter fit */
-  }
-
-  #top .left-content h6 {
-    font-size: 13px; /* Smaller font size */
-    letter-spacing: 1px; /* Slightly reduce letter spacing */
-    margin-top: 5px;
-  }
-
-  #top .left-content .main-white-button {
-    margin-top: 15px;
-    margin-bottom: 5px;
-  }
-
-  #top .left-content .main-white-button a {
-    font-size: 14px; /* Smaller button text */
-    padding: 8px 15px; /* Reduces padding for smaller button size */
-    width: auto;
-  }
-  #about .right-content {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  #reservation .phone {
-    margin-bottom: 60px;
-  }
-  #contact {
-    margin-left: 0px;
-    margin-top: 30px;
-  }
-  
-  #offers .heading-tabs {
-    display: flex;
-    flex-wrap: wrap; /* Allows tabs to wrap within the row */
-    justify-content: center;
-    gap: 10px; /* Adds spacing between tabs */
-  }
-
-  #offers #tabs ul li {
-    display: inline-block;
-    margin: 5px; /* Adjusts spacing for smaller screens */
-    flex: 1 1 auto; /* Makes tabs responsive */
-  }
-
-  #offers #tabs ul li a {
-    font-size: 14px; /* Smaller font size for mobile */
-    padding: 10px 5px; /* Adds padding for better spacing */
-    text-align: center;
-  }
-  
-  #offers .tabs-content .left-list {
-    margin-right: 0px;
-  }
-
-  #offers .tabs-content .right-list {
-    margin-left: 0px;
-  }
-  footer .right-text-content {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  footer .left-text-content p {
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
 
 @media (max-width: 992px) {
   #top {
@@ -1289,6 +1231,11 @@ responsive
     font-size: 14px;
     letter-spacing: 0px;
   }
+  
+  #top {
+    padding-top: 80px;
+    height: auto;
+  }
 
   #top .left-content {
     padding: 25% 0px;
@@ -1325,6 +1272,11 @@ responsive
     padding: 8px 15px; /* Reduces padding for smaller button size */
     width: auto;
   }
+
+  /* #top .left-content {
+    text-align: center;
+    padding: 25% 0px;
+  } */
   #about .right-content {
     margin-left: 0px;
     margin-top: 30px;
@@ -1336,7 +1288,6 @@ responsive
     margin-left: 0px;
     margin-top: 30px;
   }
-  
   #offers .heading-tabs {
     display: flex;
     flex-wrap: wrap; /* Allows tabs to wrap within the row */
@@ -1355,7 +1306,6 @@ responsive
     padding: 10px 5px; /* Adds padding for better spacing */
     text-align: center;
   }
-  
   #offers .tabs-content .left-list {
     margin-right: 0px;
   }
